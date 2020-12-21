@@ -12,13 +12,21 @@
         else
             document.getElementById('showGuessResult').innerHTML ="ถูกต้อง!";}
 
-    
+    function sOver(){
+        
+        rn = Math.floor(Math.random() * 100);
+        document.getElementById('showGuessNumber').innerHTML =" ";
+        document.getElementById('showGuessResult').innerHTML =" ";
+        var field= document.getElementById('gn');
+        field.value= field.defaultValue;
+        }
 
 </script>
 
 <button onclick="guess(gn.value); reguess(gn.value)">Guess</button></br>
 
 <input type="text" placeholder="?" id="gn"></br>
+
 
 <p id="showGuessNumber"></p><br>
 <p id="showGuessResult"></p>
